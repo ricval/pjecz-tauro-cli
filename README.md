@@ -51,8 +51,12 @@ NOMBRE_DISTRITO=Saltillo
 `python generar_sicgd_csv.py 0 Juzgado_`
 
 
-## Convertir un script Python en un archivo ejecutabel
+## Convertir un script Python en un archivo ejecutable
 
-Instala el paquete `pyinstaller`
+Instalar el paquete `cx_Freeze`
 
-`poetry add pyinstaller`
+`poetry add cx_Freeze`
+
+Crear el archivo ejecutable
+
+`python setup.py build`
