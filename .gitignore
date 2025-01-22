@@ -13,6 +13,8 @@
 *.xlsx
 *.XLS
 *.XLSX
+*.bak
+*.BAK
 
 .bashrc
 .env
