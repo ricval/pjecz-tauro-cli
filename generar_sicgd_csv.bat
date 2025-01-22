@@ -26,7 +26,9 @@ echo Fecha,"Nombre Archivo","Tamanio (MB)" > %nombre_archivo%
 :: Listar archivos con la fecha de búsqueda en su nombre
 (
     for /f "tokens=*" %%a in ('dir /b /s *%anio%%mes%*.BAK') do (
-        set "dia=08"
+        set "nombre_archivo_listado=%%~nxa"
+        set "fecha_en_nombre=!nombre_archivo_listado:*%anio%%mes%=!"
+        set "dia=!fecha_en_nombre:~0,2!"
         set "fecha=%anio%-%mes%-!dia!"
         set "tamanio=%%~za"
         set /a "tamanioMB=!tamanio! / 1024 / 1024"
