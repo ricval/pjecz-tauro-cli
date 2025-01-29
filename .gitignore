@@ -15,6 +15,7 @@
 *.XLSX
 *.bak
 *.BAK
+*.7z
 
 .bashrc
 .env

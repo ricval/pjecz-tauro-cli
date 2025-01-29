@@ -21,7 +21,7 @@ echo La fecha asignada es: %anio%-%mes%
 :: Crear archivo de reporte
 echo Generando reporte
 set "nombre_archivo=reporte_%anio%%mes%.csv"
-echo Fecha,"Nombre Archivo","Tamanio (MB)" > %nombre_archivo%
+echo Fecha,"Nombre Archivo","Tamaño (MB)" > %nombre_archivo%
 
 :: Listar archivos con la fecha de búsqueda en su nombre
 (
